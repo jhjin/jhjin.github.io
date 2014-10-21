@@ -1,0 +1,31 @@
+[merge]
+	tool = opendiff
+[color]
+	ui = true
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = blue
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = green bold
+	changed = red bold
+[user]
+	name = Jonghoon Jin
+	email = jhjin0@gmail.com
+[push]
+	default = simple
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	rb = rebase
+	cm = commit
+	lg = log --decorate --graph --stat
+	lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(blue)%h%C(reset) - %C(reset)%s%C(reset) %C(green)(%ar)%C(reset) %C(dim white)- %an%C(reset)%C(red)%d%C(reset)' --all
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(blue)%h%C(reset) - %C(cyan)%aD%C(reset) %C(green)(%ar)%C(reset)%C(red)%d%C(reset)%n''          %C(reset)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+	wdiff = diff --color-words
